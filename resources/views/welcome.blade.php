@@ -2,32 +2,18 @@
 
 @section('title', 'Главная')
 
+@push('styles')
+    <link rel="shortcut icon" href="{{ asset('assets/rentcar/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/css_reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/jquery.datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/rentcar/css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/loaders.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/index.css') }}">
+@endpush
+
 @section('content')
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Jewel Theme">
-        <meta name="description" content="Wheel - Responsive and Modern Car Rental Website Template">
-        <meta name="keywords" content="">
-        <title>Дирекция железнодорожных вокзалов</title>
-        <link rel="shortcut icon" href="{{ asset('assets/rentcar/images/favicon.ico') }}" type="image/x-icon">
-        <!-- reset css -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/css_reset.css') }}">
-        <!-- bootstrap -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/jquery.datetimepicker.min.css') }}">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="{{ asset('assets/rentcar/css/bootstrap-select.min.css') }}">
-        <!-- preload -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/loaders.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/rentcar/css/index.css') }}">
-        <!--[if lt IE 9]>
-        <script src="{{ asset('assets/rentcar/js/html5shiv.min.js') }}"></script>
-        <script src="{{ asset('assets/rentcar/js/respond.min.js') }}"></script>
-        <![endif]-->
-    </head>
-    <body class="">
+<div class="rentcar-page">
         <!-- MAIN -->
         <div class="load-wrap">
             <div class="wheel-load">
@@ -269,22 +255,18 @@
                 </div>
             </div>
         </div>
-        <!-- Scripts project -->
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery-2.2.4.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/bootstrap.min.js') }}"></script>
-        <!-- count -->
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery.countTo.js') }}"></script>
-        <!-- google maps -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt5tJTim4lOO3ojbGARhPd1Z3O3CnE-C8" type="text/javascript"></script>
-        <!-- swiper -->
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/idangerous.swiper.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/equalHeightsPlugin.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery.datetimepicker.full.min.js') }}"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/bootstrap-select.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/rentcar/js/index.js') }}"></script>
         <!-- sixth block end -->
-    </body>
-</html>
-
+</div>
 @endsection
+
+@push('scripts')
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery-2.2.4.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery.countTo.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt5tJTim4lOO3ojbGARhPd1Z3O3CnE-C8" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/idangerous.swiper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/equalHeightsPlugin.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/jquery.datetimepicker.full.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/bootstrap-select.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/rentcar/js/index.js') }}"></script>
+@endpush
