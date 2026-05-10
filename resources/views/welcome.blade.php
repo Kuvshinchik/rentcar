@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+@extends('layouts.admin')
+
+@section('title', 'Главная')
+
+@section('content')
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -282,3 +286,5 @@
         <!-- sixth block end -->
     </body>
 </html>
+
+@endsection
